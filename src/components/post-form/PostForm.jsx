@@ -7,6 +7,7 @@ import { useSelector } from "react-redux";
 import authService from "../../appwrite/auth";
 
 function PostForm({ post }) {
+  console.log(post);
   const { register, handleSubmit, watch, setValue, control, getValues } =
     useForm({
       defaultValues: {

@@ -7,8 +7,8 @@ export class Service {
   bucket;
   constructor() {
     this.client
-      .setEndpoint(conf.appwriteUrl) // Your API Endpoint
-      .setProject(conf.appwriteProjectId); // Your project ID
+      .setEndpoint(conf.appwriteUrl)
+      .setProject(conf.appwriteProjectId);
 
     this.databases = new Databases(this.client);
 
@@ -84,7 +84,6 @@ export class Service {
       console.log("error in getPosts :: ");
       return "";
     }
-    return null;
   }
 
   async uploadFile(file) {
